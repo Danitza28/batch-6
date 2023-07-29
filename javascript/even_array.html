@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Find Even Numbers</title>
+  </head>
+  <body>
+    <form>
+      <label for="inputArray">Enter an array of integers:</label><br />
+      <input type="text" id="inputArray" name="inputArray" /><br />
+      <button type="button" onclick="findEvenNumbers()">Find Even Numbers</button><br />
+      <h1 id="outputArray" name="outputArray"></h1>
+    </form>
+
+    <script>
+      function findEvenNumbers() {
+        var inputArray = document.getElementById("inputArray").value.split(",");
+        var outputArray = inputArray.filter(num => num % 2 == 0);
+        document.getElementById("outputArray").innerHTML=outputArray;
+      }
+    </script>
+  </body>
+</html>

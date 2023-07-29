@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="index.js"></script> -->
+</head>
+<body>
+    <h1 id="input">
+
+    </h1>
+  <button onclick="practise()"> click it</button>
+  <input type="number" placeholder="write it" id="m1">
+  <script>
+    function practise(){
+        var x=Number(document.getElementById("m1").value);
+    if (x%2==0){
+        document.getElementById("input").innerHTML=("true");
+    }
+    else{
+        document.getElementById("input").innerHTML=("nope");
+    }
+    }
+
+  </script>  
+</body>
+</html>

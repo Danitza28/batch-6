@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Count Occurrences</title>
+  </head>
+  <body>
+    <form>
+      <label for="inputArray">Enter an array of numbers:</label><br />
+      <input type="text" id="inputArray" name="inputArray" /><br />
+      <label for="searchNumber">Enter a number to search for:</label><br />
+      <input type="text" id="searchNumber" name="searchNumber" /><br />
+      <button type="button" onclick="countOccurrences()">Count Occurrences</button><br />
+      <h1 id="outputOccurrences"></h1>
+    </form>
+
+    <script>
+      function countOccurrences() {
+        var inputArray = document.getElementById("inputArray").value.split(",");
+        var searchNumber = Number(document.getElementById("searchNumber").value);
+        var occurrences =
+        document.getElementById("outputOccurrences").innerHTML = occurrences;
+      }
+    </script>
+  </body>
+</html

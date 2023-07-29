@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="w1"></p>
+    <p id="w2"></p>
+    <p id="w3"></p>
+    <script>
+        var x = [
+            'ei',
+            'dye',
+            'cye',
+            'br',
+            'are'
+        ];
+        
+        document.getElementById("w1").innerHTML = x;
+        document.getElementById("w1").innerHTML = x[x.length -1];
+        var z = ['dani','hi','ty','j']
+        z.splice(1,2,'nati','tesfa');
+        z.push('w');
+        document.getElementById("w2").innerHTML = z;
+        let i = [1,2,3,4];
+        let u = [5,6,7,8];
+        document.getElementById("w3").innerHTML = i.concat(u);
+    </script>
+</body>
+</html>

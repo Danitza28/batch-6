@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="C:\Users\ayub computer\Desktop\vs code project\full_stack\bootstrap\css\bootstrap.min.css">
+    <scrip src="C:\Users\ayub computer\Desktop\vs code project\full_stack\bootstrap\js\bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <h1> calculating area of rectangle</h1>
+    <p id="test"></p>
+    <button onclick="rectangle()">click it</button>
+    <input type="number" placeholder="tell me the number" id="o1">
+    <input type="number" placeholder="tell me the numbber" id="o2">
+<h1>calculating area of triangle</h1>
+    <p id="test1"></p>
+    <button onclick="triangle()">click it</button>
+    <input type="number" placeholder="tell me the number" id="t1">
+    <input type="number" placeholder="tell me the numbber" id="t2">
+<script>
+    function rectangle(){
+        var x = Number(document.getElementById("o1").value);
+        var y = Number(document.getElementById("o2").value);
+        document.getElementById("test").innerHTML=(x*y);
+    }
+    function triangle(){
+        var x = Number(document.getElementById("t1").value);
+        var y = Number(document.getElementById("t2").value);
+        document.getElementById("test1").innerHTML=(1/2*(x*y));
+    }
+</script>  
+    
+        <h1> statstical problem</h1> <h2>mean</h2>
+        <p id="test3"></p>
+        <input type="number" placeholder="math num" id="m1">
+        <input type="number" placeholder="math num" id="m2">
+        <input type="number" placeholder="math num" id="m3">
+        <input type="number" placeholder="math num" id="m4">
+        <input type="number" placeholder="math num" id="m5">
+        <button onclick="mean()"> here it is</button>
+    <script>
+        function mean(){
+            var q= Number(document.getElementById("m1").value);
+            var r=Number(document.getElementById("m2").value);
+            var t=Number(document.getElementById("m3").value);
+            var y=Number(document.getElementById("m4").value);
+            var u=Number(document.getElementById("m5").value);
+            document.getElementById("test3").innerHTML=((q+r+t+y+u)/5);
+        }
+    </script>
+</body>
+</html>

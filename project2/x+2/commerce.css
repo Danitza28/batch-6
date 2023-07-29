@@ -1,0 +1,101 @@
+#one{
+    margin-left: 350px;
+    margin-bottom: 350px;
+}
+#search{
+    margin-left: 200px;
+}
+.h11{
+    margin-top:10px;
+}
+#h33{
+    margin-top:100px;
+    margin-left: 45px;
+    margin-bottom: 12px;
+}
+#in{
+    margin-left:45px;
+    margin-bottom: 24px;
+}
+.division{
+    margin-left: 25px;
+    margin-bottom:100px;
+}
+.clu{
+    
+    position: absolute;
+    bottom: 20%;
+    left: 40%;
+    margin-top:35px;
+}
+.clu2{
+    position:absolute;
+    bottom:-190px;
+    left:40%;
+    margin-bottom: 25px;
+}
+
+#dna{
+    position:absolute;
+    bottom: 12%;
+    left:40%;
+    color:black;
+    font-size:25px;
+    margin-left: 40px;
+}
+#eth{
+    position:absolute;
+    bottom: 12%;
+    left:40%;
+    color:black;
+    font-size:25px;
+    margin-left: 260px;
+}
+#men{
+    position:absolute;
+    bottom: 12%;
+    left:40%;
+    color:black;
+    font-size:25px;
+    margin-left: 490px;
+}
+#idk{
+    position:absolute;
+    bottom:-35%;
+    left:40%;
+    color:black;
+    font-size:25px;
+    margin-left: 40px;
+}
+#illu{
+    position:absolute;
+    bottom: -35%;
+    left:40%;
+    color:black;
+    font-size:25px;
+    margin-left: 260px; 
+}
+#sky{
+    position:absolute;
+    bottom: -35%;
+    left:40%;
+    color:black;
+    font-size:25px;
+    margin-left: 480px;
+}
+#color{
+    background-color: rgb(245, 245, 241);
+}
+#delki{
+    position:absolute;
+    bottom: 78%;
+    left: 30%;
+}
+#sa{
+    position:absolute;
+    bottom: 78%;
+    left: 30%;
+    margin-left:150px;
+}
+
+

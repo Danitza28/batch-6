@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculate Average</title>
+  </head>
+  <body>
+    <form>
+      <label for="inputArray">Enter an array of numbers:</label><br />
+      <input type="text" id="inputArray" name="inputArray" /><br />
+      <button type="button" onclick="calculateAverage()">Calculate Average</button><br />
+      <h1 id="outputAverage"></h1>
+    </form>
+
+    <script>
+      sum=0;
+      function calculateAverage() {
+        var inputArray = document.getElementById("inputArray").value;
+        var y = inputArray.split(",");
+        var z = inputArray.length;
+        
+        for(i=0;i<z;i++){
+          sum=sum+Number(y[i]);
+          var avg = sum/z;
+        }
+        document.getElementById("outputAverage").innerHTML=avg;
+        
+      }
+    </script>
+  </body>
+</html>

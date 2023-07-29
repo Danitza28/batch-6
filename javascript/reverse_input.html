@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: rgb(70, 70, 102);
+        }
+        h1{
+            text-align: center;
+            color:yellowgreen;
+            font-size:75px;
+        }
+        p{
+            font-size:35px;
+
+        }
+        #ct2{
+            height:200px;
+            width:200px;
+        }
+        #ct22{
+            
+            margin-right: 45px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> Form </h1>
+    <p> Please fill this form what you feel.</p>
+    <label> Comment </label>:-
+    <input type="text" id="ct2" placeholder="write here.."><br>
+    <button onclick="ty()"> click here </button>
+    <p id="test"></p>
+
+
+    <script>
+        function ty(){
+            var x = document.getElementById("ct2").value;
+            document.getElementById("test").innerHTML = x.split("").reverse().join("");
+
+        }
+    </script>
+</body>
+</html>

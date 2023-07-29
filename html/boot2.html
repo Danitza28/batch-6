@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="C:\Users\ayub computer\Desktop\vs code project\full_stack\bootstrap\css\bootstrap.min.css">
+    <script src="C:\Users\ayub computer\Desktop\vs code project\full_stack\bootstrap\js\bootstrap.bundle.min.js ">
+    </script>
+    <style>
+        #submit{
+            margin-left: 1075px;
+        }
+        #desc{
+            margin-left: 80px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+            <div class="row" class="form-control">
+                <label for="fname" class="col me-5 p-4"> First Name </label>
+                <input id="fname" type="text" placeholder="your name.." class="col-9 p-4 mb-3">
+            </div>
+            <div  class="row" class="form-control">
+                <label for="Lname" class="col me-5 p-4"> Last Name </label>
+                <input id="Lname" type="text" placeholder="your last name.." class="col-9 p-4 mb-3">
+            </div> 
+            <div  class="row">
+                <div class="form-control">
+                    <label for="select" class="col p-4"> country</label>
+                </div>
+                <div>
+                    <select class="form-select" id="drop" class="col-9 p-4" id="select"> 
+                        <option value="ETHIOPIA"> ETHIOPIA</option>
+                        <option value="ABYSINIA"> ABYSINIA</option>
+                    </select>
+                </div>
+            </div>
+            <div  class="row" class="form-control">
+                <label for="desc" class="col ms-5"> subject</label>
+                <textarea name="description" id="desc" cols="30" rows="10" class="col-9 p-4 "> write something..</textarea>
+            </div>
+        </div> 
+        <input id="submit" type="submit" class="col bg-success">
+
+    </form>
+</body>
+</html>

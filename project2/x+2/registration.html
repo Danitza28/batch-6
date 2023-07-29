@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook registration</title>
+    <link rel="stylesheet" href="C:\Users\ayub computer\Desktop\vs code project\full_stack\bootstrap\css\bootstrap.min.css">
+    <script src="C:\Users\ayub computer\Desktop\vs code project\full_stack\bootstrap\js\bootstrap.bundle.min.js"></script>
+    <style>
+        .body{
+            background: #081b29;
+       }
+        #h11{
+            color:aqua;
+            margin-top: 50px;
+            margin-left:350px;
+            margin-bottom: 50px;
+        }
+        #email{
+            margin-bottom: 20px;
+        }
+        #submit{
+            margin-top:20px;
+        }
+        #border{
+            border: 1px solid rgb(41, 21, 116);
+            border-width:3px;
+            border-radius: 650px;
+            border-left: 40px;
+            border-right:40px;
+            border-bottom-width: 50px;
+        }
+        .body{
+            margin-top: 100px;
+        }
+        #button{
+            margin-left: 550px;
+        }
+        #buta{
+            margin-right:0px;
+            margin-left:125px;
+            background-color: rgb(18, 190, 18);
+            height: 40px;
+            width:200px;
+            
+        }
+    </style>
+</head>
+<body class="body">
+    <div id="border">
+        <h1 id="h11"> Welcome to the Chat DNA</h1>
+        <form>
+            <div class="row" style="margin-left: 350px;">
+                <input id="email" type="Email" placeholder="Email" class="col-6">
+            </div>
+            <div class="row" style="margin-left:350px;">
+                <input type="password" placeholder="password" class="col-6">
+            </div>
+            <div class="row" style="margin-left: 350px;">
+                 <input id="submit" type="submit" class="col-6 mb-2 bg-primary">
+            </div>
+            <h4 style="margin-left: 590px;"> or </h4>
+            <!-- Button to Open the Modal -->
+<button type="button" id="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    Create New Account
+  </button>
+  
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Register</h2>
+          <p id="p1"> You can do this very quickly and easily</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <form>
+                <div>
+                    <div class="row">
+                            <input type="text" placeholder="first name" class="col me-2 mb-2" class="form-control" class="color">
+                            <input type="text" placeholder="Last name" class="col ms-2 mb-2" class="form-control" class="color">
+                    </div>
+                    <div class="row mb-2">
+                        <input type="Email" placeholder="Mobile phone number or Email" class="form-control">
+                    </div>
+                    <div class="row mb-3">
+                        <input type="password" placeholder="New password" class="form-control">
+                    </div>
+                    <p>Date of birth</p>
+                    <!-- dropdown menu-->
+                    <div class="row">
+                        <div class="col-4 mb-3">
+                            <select class="form-select" id="drop" id="select"> 
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                            </select>
+                        </div>
+                        <div class="col-4 mb-3" > 
+                            <select  id="drop" class="form-select" id="select">
+                                <option value="jul">jul</option>
+                                <option value="august">august</option>
+                                <option value="january">january</option>
+                            </select>
+                        </div>
+                        <div class="col-4 mb-3">
+                            <select  id="drop" id="select" class="form-select">
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                            </select>
+                        </div>
+                    </div>
+                    <p>sex</p>
+                    <div class="row">
+                        <div class="col-4" class="border2" class="form-check">
+                                <label for="woman"> woman</label>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        </div>
+                        <div class="col-4" class="form-check"> 
+                            <label for="man">man</label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        </div>
+                        <div class="col" class="form-check"> 
+                            <label for="Amended"> Amended</label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        </div>
+                    </div>
+                    <div>
+                        <p style="margin-top:5px"> People who use our service may have uploaded your contact information to Facebook. Learn more.</p>
+                        
+                        <p>In the Privacy Policy, we explain how we collect, use, share, retain and transfer infor mation. We also let you know your rights. Each section of the Policy includes helpful examples and simpler language to make our privacy.</p>
+                    </div>
+                    <div>
+                        <button id="buta" > Register</button>
+                    </div>
+                </div>                
+            </form>
+        </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
