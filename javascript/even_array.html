@@ -4,19 +4,41 @@
     <title>Find Even Numbers</title>
   </head>
   <body>
-    <form>
-      <label for="inputArray">Enter an array of integers:</label><br />
-      <input type="text" id="inputArray" name="inputArray" /><br />
-      <button type="button" onclick="findEvenNumbers()">Find Even Numbers</button><br />
-      <h1 id="outputArray" name="outputArray"></h1>
-    </form>
+    <input type="text" id="pass">
+    <button onclick="even()"> click here</button>
+    <h1 id="result"></h1> 
 
     <script>
-      function findEvenNumbers() {
-        var inputArray = document.getElementById("inputArray").value.split(",");
-        var outputArray = inputArray.filter(num => num % 2 == 0);
-        document.getElementById("outputArray").innerHTML=outputArray;
-      }
+//       function even() {
+//   // Get the value of the input and convert it to an array of numbers
+//   var num = document.getElementById("pass").value.split(",").map(Number);
+//   // Get the output element
+//   var result = document.getElementById("result");
+//   // Clear the previous output
+//   result.innerHTML = "";
+//   // Check if the input is valid
+//   if (num.length > 0 && num.every(Number.isInteger)) {
+//     // Define a function that tests if a number is even
+//     function isEven(number) {
+//       return number % 2 == 0;
+//     }
+//     // Use the filter method to create a new array with only even numbers
+//     var evenArray = num.filter(isEven);
+//     // Loop through the even array
+//     for (var i = 0; i < evenArray.length; i++) {
+//       // Create a new paragraph element to display the even number
+//       var p = document.createElement("p");
+//       p.innerHTML = evenArray[i] + " is an even number.";
+//       // Append the paragraph element to the output element
+//       result.appendChild(p);
+//     }
+//     // Clear the input field
+//     document.getElementById("pass").value = "";
+//   } else {
+//     // Display an error message
+//     result.innerHTML = "Please enter a valid array of numbers.";
+//   }
+// }
     </script>
   </body>
 </html>

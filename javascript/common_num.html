@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Common Numbers Example</title>
+</head>
+<body>
+  <h1>Common Numbers Example</h1>
+  <p>Enter two arrays of numbers separated by commas and click the button to display the common numbers in the output.</p>
+  <input type="text" id="array1" placeholder="Enter the first array here">
+  <input type="text" id="array2" placeholder="Enter the second array here">
+  <button onclick="findCommonNumbers()">Display</button>
+  <div id="output"></div>
+  <script>
+function findCommonNumbers() {
+  // Get the value of the input and convert it to an array of numbers
+  var array1 = document.getElementById("array1").value.split(",").map(Number);
+  var array2 = document.getElementById("array2").value.split(",").map(Number);
+  // Get the output element
+  var output = document.getElementById("output");
+  // Clear the previous output
+  output.innerHTML = "";
+  // Check if the input is valid
+  if (array1.length > 0 && array2.length > 0 && array1.every(Number.isInteger) && array2.every(Number.isInteger)) {
+    // Create an empty array to store the common numbers
+    let commonArray = [];
+    // Loop through the first input array
+    for (let i = 0; i < array1.length; i++) {
+      // Get the current element of the first array
+      let number = array1[i];
+      // Check if the second array includes the current element
+      if (array2.includes(number)) {
+        // If yes, push it to the commonArray
+        commonArray.push(number);
+      }
+    }
+    // Display the commonArray on the web page
+    output.innerHTML = "The common numbers are: " + commonArray.join(", ");
+    // Clear the input fields
+    document.getElementById("array1").value = "";
+    document.getElementById("array2").value = "";
+  } else {
+    // Display an error message
+    output.innerHTML = "Please enter valid arrays of numbers.";
+  }
+}
+
+  </script>
+</body>
+</html>

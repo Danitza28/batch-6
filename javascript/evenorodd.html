@@ -1,24 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=placeholder, initial-scale=1.0">
-    <title>Document</title>
+  <title>Reverse String Example</title>
 </head>
 <body>
-    <p id="test"></p>
-    <input type="number" id="eo1" oninput="evenOrOdd()">
-    
-    <script>
-        function evenOrOdd(){
-            var x = document.getElementById("eo1").value;
-            if(x%2==0){
-                document.getElementById("test").innerHTML = "Even";
-            }
-            else{
-                document.getElementById("test").innerHTML = "Odd";
-            }
-        }
-    </script>
+  <h1>Reverse String Example</h1>
+  <p>Enter a string and click the button to display its reverse on the web page.</p>
+  <input type="text" id="userInput" placeholder="Enter a string here">
+  <button id="displayButton">Display</button>
+  <div id="output"></div>
+  <script>
+    let userInput = document.getElementById("userInput");
+    let displayButton = document.getElementById("displayButton");
+    let output = document.getElementById("output");
+
+// Add an event listener to the button
+    displayButton.addEventListener("click", function() {
+  // Get the value of the user input
+        let input = userInput.value;
+  // Check if the input is not empty
+        if (input) {
+    // Call the reverseString function to get the reverse of the input
+        let reversed = reverseString(input);
+    // Display the reversed string on the web page
+        output.innerHTML = "The reverse of " + input + " is: " + reversed;
+    // Clear the input field
+        userInput.value = "";
+     }  else {
+    // Display an error message
+        output.innerHTML = "Please enter a string.";
+    }
+    });
+
+
+  </script>
 </body>
 </html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> maximum and minimum identifier.</h1>
+    <p id="show"></p>
+    <input type="text" id="num">
+    <button onclick="math()"> click here </button>
+    <script>
+        function math(){
+            var n1 = document.getElementById("num").value.split(",").map(Number);
+            document.getElementById("show").innerHTML += "The maximum number is: " + Math.max(...n1) + "<br>";
+            document.getElementById("show").innerHTML += "The minimum number is: " + Math.min(...n1);
+
+        }
+    </script>
+</body>
+</html>
